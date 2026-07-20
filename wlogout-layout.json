@@ -1,0 +1,40 @@
+{
+  "layout": [
+    {
+      "label": "lock",
+      "action": "loginctl lock-session",
+      "text": "Lock",
+      "keysym": "l"
+    },
+    {
+      "label": "logout",
+      "action": "loginctl terminate-user $USER",
+      "text": "Logout",
+      "keysym": "e"
+    },
+    {
+      "label": "suspend",
+      "action": "systemctl suspend",
+      "text": "Suspend",
+      "keysym": "u"
+    },
+    {
+      "label": "hibernate",
+      "action": "systemctl hibernate",
+      "text": "Hibernate",
+      "keysym": "h"
+    },
+    {
+      "label": "reboot",
+      "action": "systemctl reboot",
+      "text": "Reboot",
+      "keysym": "r"
+    },
+    {
+      "label": "shutdown",
+      "action": "systemctl poweroff",
+      "text": "Shutdown",
+      "keysym": "s"
+    }
+  ]
+}
