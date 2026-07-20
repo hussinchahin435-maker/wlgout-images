@@ -1,0 +1,95 @@
+/* Wlogout Style Configuration */
+/* إعدادات تنسيق wlogout */
+
+* {
+    background-image: none;
+}
+
+window {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 12px;
+}
+
+button {
+    background-color: rgba(102, 126, 234, 0.2);
+    color: #ffffff;
+    border-radius: 12px;
+    border: 2px solid #667eea;
+    padding: 20px;
+    margin: 5px;
+    background-size: 64px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 100px;
+    min-height: 100px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+button:hover {
+    background-color: rgba(102, 126, 234, 0.5);
+    border-color: #764ba2;
+    box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
+    transform: scale(1.05);
+}
+
+button:focus {
+    outline: none;
+    background-color: rgba(102, 126, 234, 0.7);
+    border-color: #764ba2;
+}
+
+button:active {
+    background-color: rgba(102, 126, 234, 0.9);
+    transform: scale(0.95);
+}
+
+/* Icons alignment */
+button label {
+    opacity: 0.85;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+button:hover label {
+    opacity: 1.0;
+}
+
+/* Dark theme adjustments */
+button {
+    background-clip: content-box;
+}
+
+/* Hover effects */
+#lock:hover {
+    border-color: #3b82f6;
+    background-color: rgba(59, 130, 246, 0.3);
+}
+
+#logout:hover {
+    border-color: #ef4444;
+    background-color: rgba(239, 68, 68, 0.3);
+}
+
+#suspend:hover {
+    border-color: #f59e0b;
+    background-color: rgba(245, 158, 11, 0.3);
+}
+
+#hibernate:hover {
+    border-color: #10b981;
+    background-color: rgba(16, 185, 129, 0.3);
+}
+
+#reboot:hover {
+    border-color: #8b5cf6;
+    background-color: rgba(139, 92, 246, 0.3);
+}
+
+#shutdown:hover {
+    border-color: #ec4899;
+    background-color: rgba(236, 72, 153, 0.3);
+}
