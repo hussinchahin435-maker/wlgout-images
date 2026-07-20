@@ -1,0 +1,44 @@
+{
+  "name": "wlgout-images",
+  "version": "1.0.0",
+  "description": "Professional logout and system control icons - صور الخروج والتحكم بالنظام",
+  "main": "index.html",
+  "scripts": {
+    "start": "python3 -m http.server 8000",
+    "serve": "python3 -m http.server 8000",
+    "serve:3000": "python3 -m http.server 3000",
+    "serve:5000": "python3 -m http.server 5000",
+    "serve:8080": "python3 -m http.server 8080",
+    "open": "xdg-open index.html",
+    "dev": "python3 -m http.server 8000 & xdg-open http://localhost:8000",
+    "http-server": "http-server",
+    "http-server:3000": "http-server -p 3000"
+  },
+  "keywords": [
+    "logout",
+    "icons",
+    "system",
+    "images",
+    "UI",
+    "UX",
+    "fedora",
+    "linux",
+    "gnome"
+  ],
+  "author": "Hussin Chahin",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hussinchahin435-maker/wlgout-images"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.0"
+  },
+  "engines": {
+    "node": ">=12.0.0",
+    "python": ">=3.6"
+  },
+  "os": [
+    "linux"
+  ]
+}
