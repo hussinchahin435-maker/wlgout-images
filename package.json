@@ -1,44 +1,42 @@
 {
-  "name": "wlgout-images",
-  "version": "1.0.0",
-  "description": "Professional logout and system control icons - صور الخروج والتحكم بالنظام",
-  "main": "index.html",
-  "scripts": {
-    "start": "python3 -m http.server 8000",
-    "serve": "python3 -m http.server 8000",
-    "serve:3000": "python3 -m http.server 3000",
-    "serve:5000": "python3 -m http.server 5000",
-    "serve:8080": "python3 -m http.server 8080",
-    "open": "xdg-open index.html",
-    "dev": "python3 -m http.server 8000 & xdg-open http://localhost:8000",
-    "http-server": "http-server",
-    "http-server:3000": "http-server -p 3000"
-  },
-  "keywords": [
-    "logout",
-    "icons",
-    "system",
-    "images",
-    "UI",
-    "UX",
-    "fedora",
-    "linux",
-    "gnome"
-  ],
-  "author": "Hussin Chahin",
+  "name": "Horimiya Prototype Theme",
+  "version": "2.0.0",
+  "description": "Comprehensive personal environment theme with wallust integration",
+  "repository": "https://github.com/hussinchahin435-maker/horimiya-prototype-theme",
   "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hussinchahin435-maker/wlgout-images"
+  "author": "Hussin Chahin",
+  "components": {
+    "wlogout": {
+      "enabled": true,
+      "version": "1.0.0",
+      "description": "Logout/Power menu theme",
+      "required_files": ["layout.json", "style.css", "icons/"]
+    },
+    "terminal": {
+      "enabled": true,
+      "version": "1.0.0",
+      "description": "Terminal emulator configurations",
+      "sub_components": ["kitty", "alacritty", "foot"]
+    },
+    "shell": {
+      "enabled": true,
+      "version": "1.0.0",
+      "description": "Shell configurations and colorschemes",
+      "sub_components": ["zsh", "bash"]
+    }
   },
-  "devDependencies": {
-    "http-server": "^14.1.0"
+  "features": {
+    "wallust_integration": true,
+    "component_selection": true,
+    "template_rendering": true,
+    "auto_detection": true,
+    "hyprland_binding": true
   },
-  "engines": {
-    "node": ">=12.0.0",
-    "python": ">=3.6"
+  "requirements": {
+    "required": ["bash", "mkdir", "ln"],
+    "optional": ["wallust", "jq", "python3"],
+    "suggested": ["kitty", "alacritty"]
   },
-  "os": [
-    "linux"
-  ]
+  "supported_os": ["Linux"],
+  "tested_distributions": ["Fedora 40+", "Ubuntu 24.04+"]
 }
